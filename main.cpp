@@ -121,4 +121,4 @@ int main() {
     return 0;
 }
 
-// my record: 31.5789 wpm
+// my record: 35.2941
