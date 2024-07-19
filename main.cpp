@@ -51,9 +51,7 @@ void play(unordered_set<string>& words) {
     auto elapsedTime = duration_cast<seconds>(endTime - startTime).count();
 
     if (elapsedTime > 0) {
-
-        double minutes = static_cast<double>(elapsedTime) / 60.0;
-        double wpm = static_cast<double>(correctCount) / minutes;
+        int wpm = correctCount * 60 / elapsedTime;
         cout << "wpm: " << wpm << endl;
     }
 }
@@ -121,4 +119,4 @@ int main() {
     return 0;
 }
 
-// my record: 35.2941
+// my record: 42
